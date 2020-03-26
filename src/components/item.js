@@ -9,10 +9,10 @@ class item extends Component {
         return (
             <ul>
                 {
-                    this.props.isLoading?
+                    this.props.isLoading?//判断是否在连接
                         <li>loading...</li>
                     :
-                        this.props.errMsg?
+                        this.props.errMsg?//判断是否连接成功
                             <li>{this.props.errMsg}</li>
                         :
                             this.props.list.map(item=>{
