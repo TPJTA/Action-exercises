@@ -1,11 +1,10 @@
 import React,{useState} from 'react';
 import './App.css';
-import Home from './components/Home.js'
+import Item from './components/item.js'
 function App(props) {
-
   return (
     <div className="App">
-      <Home/>
+      <Item/>
     </div>
   );
 }
